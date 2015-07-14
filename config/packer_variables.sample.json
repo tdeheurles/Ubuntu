@@ -11,5 +11,8 @@
   "ssh_password": "vagrant",
   "hostname": "vmubuntu",
   "configuration": "minimal",
-  "preseed": "preseed.cfg"
+  "preseed": "preseed.cfg",
+  "gituser": "....",
+  "gitmail": "....",
+  "atlas_token": "...."
 }

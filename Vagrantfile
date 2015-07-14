@@ -1,8 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-$imagename = "ubuntu/vivid64"
-#$imagename = "box/pug-vivid-minimal-x64-virtualbox.box"
+#$imagename = "ubuntu/vivid64"
+$imagename = "box/pug-vivid-minimal-x64-virtualbox.box"
 $vm_memory = 6000
 $vm_cpus   = 2
 $username  = "tdeheurles"
@@ -37,9 +37,9 @@ Vagrant.configure(2) do |config|
   config.vm.network         :private_network, ip: $privateip
   #config.vm.hostname  = $hostname    # using provision as a bug workaround
   config.vm.provider :virtualbox do |vb|
-    vb.gui       = true
-    vb.check_guest_additions = false
-    vb.functional_vboxsf     = false
+    vb.gui                    = true
+    vb.check_guest_additions  = false
+    vb.functional_vboxsf      = false
 
     # http://www.virtualbox.org/manual/ch08.html
     vb.customize ["modifyvm", :id, "--memory", "#{$vm_memory}"]

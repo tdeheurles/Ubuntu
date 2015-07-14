@@ -59,7 +59,7 @@
         "scripts/debian/apt.sh",
 
         "scripts/atom.sh",
-        "scripts/unity.sh",
+        "scripts/xfce.sh",
         "scripts/virtualbox.sh",
         "scripts/docker.sh"
       ]
@@ -93,6 +93,15 @@
         "virtualbox": {
           "output": "box/pug-{{user `hostname`}}-{{user `arch`}}-virtualbox.box"
         }
+      }
+    },
+    {
+      "type": "atlas",
+      "token": "{{user `atlas_token`}}",
+      "artifact": "tdeheurles/ubuntu",
+      "artifact_type": "vagrant.box",
+      "metadata": {
+        "created_at": "{{timestamp}}"
       }
     }
   ]

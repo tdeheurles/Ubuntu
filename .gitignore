@@ -3,3 +3,5 @@ synced_folders.yaml
 user_config.sh
 .vagrant
 box
+token.sh
+*.sample.*
